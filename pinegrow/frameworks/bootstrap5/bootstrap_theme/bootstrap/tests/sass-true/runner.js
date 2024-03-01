@@ -1,0 +1,1 @@
+"use strict";const fs=require("node:fs"),path=require("node:path"),runSass=require("sass-true")["runSass"];module.exports=(e,{describe:r,it:s})=>{var t='$true-terminal-output: false; @import "true";'+fs.readFileSync(e,"utf8");runSass({describe:r,it:s,sourceType:"string"},t,{loadPaths:[path.dirname(e)]})};

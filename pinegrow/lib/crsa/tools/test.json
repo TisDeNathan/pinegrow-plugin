@@ -1,0 +1,250 @@
+{
+  "settings": {
+    "hasHeaders": true,
+    "constrainDragToContainer": true,
+    "reorderEnabled": true,
+    "selectionEnabled": false,
+    "popoutWholeStack": false,
+    "blockedPopoutsThrowError": true,
+    "closePopoutsOnUnload": true,
+    "showPopoutIcon": false,
+    "showMaximiseIcon": false,
+    "showCloseIcon": true
+  },
+  "dimensions": {
+    "borderWidth": 12,
+    "minItemHeight": 10,
+    "minItemWidth": 10,
+    "headerHeight": 28,
+    "dragProxyWidth": 300,
+    "dragProxyHeight": 200
+  },
+  "labels": {
+    "close": "close",
+    "maximise": "maximise",
+    "minimise": "minimise",
+    "popout": "open in new window",
+    "popin": "pop in"
+  },
+  "content": [
+    {
+      "type": "row",
+      "isClosable": true,
+      "reorderEnabled": true,
+      "title": "",
+      "validDropLocations": ":not(.pg-fullsize-item)",
+      "content": [
+        {
+          "type": "stack",
+          "width": 18,
+          "isClosable": false,
+          "isDocked": false,
+          "isAutoDocked": false,
+          "reorderEnabled": true,
+          "title": "",
+          "validDropLocations": ":not(.pg-fullsize-item)",
+          "activeItemIndex": 0,
+          "content": [
+            {
+              "type": "component",
+              "componentName": "lib_panel",
+              "componentState": {
+                "text": "Component 1"
+              },
+              "title": "Library",
+              "isClosable": false,
+              "reorderEnabled": true,
+              "validDropLocations": ":not(.pg-fullsize-item)"
+            },
+            {
+              "type": "component",
+              "componentName": "project_panel",
+              "componentState": {
+                "text": "Component 1"
+              },
+              "title": "Project",
+              "isClosable": false,
+              "reorderEnabled": true,
+              "validDropLocations": ":not(.pg-fullsize-item)"
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "isClosable": false,
+          "reorderEnabled": true,
+          "title": "",
+          "width": 57,
+          "validDropLocations": ":not(.pg-fullsize-item)",
+          "content": [
+            {
+              "type": "stack",
+              "isClosable": false,
+              "isFlexible": true,
+              "dontCollapseOnActiveTabClick": true,
+              "pages": true,
+              "addClass": "pg-fullsize-item",
+              "notDraggable": true,
+              "validDropLocations": ".pg-fullsize-item",
+              "checkDropAreaFunc": "pages",
+              "newStackDef": {
+                "isClosable": true,
+                "isFlexible": true,
+                "dontCollapseOnActiveTabClick": true,
+                "pages": true,
+                "addClass": "pg-fullsize-item",
+                "notDraggable": true,
+                "validDropLocations": ".pg-fullsize-item",
+                "checkDropAreaFunc": "pages"
+              },
+              "reorderEnabled": true,
+              "title": "",
+              "height": 44.20289855072463,
+              "activeItemIndex": 0,
+              "content": [
+                {
+                  "type": "component",
+                  "componentName": "canvas",
+                  "componentState": {
+                    "text": "Component 1"
+                  },
+                  "title": "Start",
+                  "validDropLocations": ".pg-fullsize-item",
+                  "checkDropAreaFunc": "pages",
+                  "isClosable": true,
+                  "reorderEnabled": true
+                }
+              ]
+            },
+            {
+              "type": "stack",
+              "isClosable": false,
+              "isHidden": true,
+              "height": 50,
+              "width": 20,
+              "codeEditors": true,
+              "aaaddClass": "pg-fullsize-item",
+              "reorderEnabled": true,
+              "title": "",
+              "validDropLocations": ":not(.pg-fullsize-item)",
+              "content": []
+            },
+            {
+              "type": "stack",
+              "isClosable": false,
+              "dontCollapseOnActiveTabClick": true,
+              "noHeaders": true,
+              "fixedHeight": 44,
+              "noSplitter": true,
+              "addClass": "pg-fullsize-item",
+              "reorderEnabled": true,
+              "title": "",
+              "height": 6.3768115942028984,
+              "validDropLocations": ":not(.pg-fullsize-item)",
+              "activeItemIndex": 0,
+              "content": [
+                {
+                  "type": "component",
+                  "componentName": "status_bar",
+                  "componentState": {
+                    "text": "Component 3"
+                  },
+                  "title": "Status bar",
+                  "height": 100,
+                  "noDragDrop": true,
+                  "isClosable": true,
+                  "reorderEnabled": true,
+                  "validDropLocations": ":not(.pg-fullsize-item)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "stack",
+          "width": 25,
+          "isClosable": false,
+          "isDocked": false,
+          "reorderEnabled": true,
+          "title": "",
+          "validDropLocations": ":not(.pg-fullsize-item)",
+          "activeItemIndex": 0,
+          "content": [
+            {
+              "type": "component",
+              "componentName": "style",
+              "componentState": {
+                "text": "Component 1"
+              },
+              "title": "Style",
+              "isClosable": false,
+              "reorderEnabled": true,
+              "validDropLocations": ":not(.pg-fullsize-item)"
+            },
+            {
+              "type": "component",
+              "componentName": "prop_panel",
+              "componentState": {
+                "text": "Component 1"
+              },
+              "title": "Properties",
+              "isClosable": false,
+              "reorderEnabled": true,
+              "validDropLocations": ":not(.pg-fullsize-item)"
+            },
+            {
+              "type": "component",
+              "componentName": "tree",
+              "componentState": {
+                "text": "Component 3"
+              },
+              "title": "Tree",
+              "isClosable": false,
+              "reorderEnabled": true,
+              "validDropLocations": ":not(.pg-fullsize-item)"
+            },
+            {
+              "type": "component",
+              "componentName": "element_code",
+              "componentState": {
+                "text": "Component 1"
+              },
+              "title": "Code",
+              "isClosable": false,
+              "reorderEnabled": true,
+              "validDropLocations": ":not(.pg-fullsize-item)"
+            },
+            {
+              "type": "component",
+              "componentName": "act_panel",
+              "componentState": {
+                "text": "Component 1"
+              },
+              "title": "Actions",
+              "isClosable": false,
+              "reorderEnabled": true,
+              "validDropLocations": ":not(.pg-fullsize-item)"
+            },
+            {
+              "type": "component",
+              "componentName": "cms_panel",
+              "componentState": {
+                "text": "Component 1"
+              },
+              "title": "Wp",
+              "isClosable": false,
+              "reorderEnabled": true,
+              "validDropLocations": ":not(.pg-fullsize-item)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "isClosable": true,
+  "reorderEnabled": true,
+  "title": "",
+  "validDropLocations": ":not(.pg-fullsize-item)",
+  "openPopouts": [],
+  "maximisedItemId": null
+}

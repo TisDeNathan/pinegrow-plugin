@@ -1,0 +1,48 @@
+#wpcontent {
+    padding-left:0;
+}
+
+#wpbody-content {
+    padding-bottom:0;
+}
+
+#wpbody-content > *:not(.pinegrow-editor-wrapper,.pinegrow-loading) {
+    display: none !important;
+}
+
+#wpfooter {
+    display: none;
+}
+
+.pinegrow-editor-wrapper {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 32px);
+    visibility: hidden;
+    //transition: opacity 0.2s, width 0.5s, height 0.5s, top 0.5s, left 0.5s;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.pinegrow-editor-wrapper iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.pinegrow-editor-wrapper.pinegrow-loaded {
+    visibility: visible;
+}
+
+.pinegrow-editor-wrapper.pinegrow-editor-full {
+    position: fixed;
+    z-index: 1000000;
+}
+
+.pinegrow-loading {
+    position: absolute;
+    top: 48vh;
+    width:100%;
+    text-align: center;
+}
+
+

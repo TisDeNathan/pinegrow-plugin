@@ -1,0 +1,10 @@
+.power-bar {
+  position: absolute;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.power-bar-input {
+  width: 400px;
+}

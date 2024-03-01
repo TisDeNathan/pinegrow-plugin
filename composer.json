@@ -1,0 +1,8 @@
+{
+    "name": "makewavesbe/pinegrow-plugin",
+    "description": "Pinegrow plugin",
+    "type": "wordpress-plugin",
+    "require": {
+      "composer/installers": "^v2.2"
+    }
+  } 

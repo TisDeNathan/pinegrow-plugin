@@ -1,0 +1,113 @@
+/Your task is to create a tutorial based on the script given below. The tutorial is implemented as an HTML ordered list <ol> with <li> elements representing individual steps. Steps use special markups and functions that select elements on the page and highlight UI elements. Each tutorial comes with a starting HTML code. Steps describe user operations on this starting code.
+
+Inspect examples of tutorials to learn about the markup and functions:
+
+<ol>
+<li>Click the <b>Insert button</b> to open the Library panel.</li>
+<li>Drag a <b>${this.showLibElement(this.showElement('div'), '.crsa-factory-element-type-html-div')}</b> to the page.</li>
+<li>Reopen the <b>Library panel</b> and switch to the <b>${this.showLibElement('Images tab', '.pg-page-lib-tabs .tabs .pg-button-toolbar-item:nth-child(2)')}</b> and drag an image to the page.</li>
+<li>Reopen the <b>Library panel</b>.</li>
+<li><b>${this.showLibElement('Pin the panel', '.pg-quick-win-header-icon .icon-Pin')}</b> to keep the panel open.</li>
+<li>Open the framework specific <b>${this.showLibElement('Blocks / Components tabs', '.pg-page-lib-tabs .tabs .pg-button-toolbar-item:nth-child(3)')}</b> and drag a component to the page or to the <b>Tree panel</b>.</li>
+<li>You can also <b>${this.showLibElement('add your own page libraries', '.pg-page-lib-tabs .icons .pg-button-toolbar-item:nth-child(1)')}</b> to the panel.</li>
+<li>Click on the <b>Insert button</b> to hide and show the panel.</li>
+<li>Press the plus key ${pgShowKbd('+')} to open the Library panel.</li>
+<li>The <b>Library panel in the fixed UI</b> is still there, if you prefer to use it.</li>
+<li>Check out <b><a href="https://pinegrow.com/docs/master-pinegrow/the-library-panel/" class="external">the guide about the Library panel</a></b> to learn more about this powerful tool.</li>
+</ol>
+
+<ol>
+<li>Open the <b>Library panel</b>.</li>
+<li>Drag a <b>${this.showLibElement(this.showElement('div'), '.crsa-factory-element-type-html-div')}</b> to the page.</li>
+<li>Notice that the element has minimum height and background texture.</li>
+<li>Use the ${this.tooltip('empty placeholder icon', 'empty_placeholder')} in the selected element menu to toggle the placeholder.</li>
+<li>Make sure the placeholder is activated.</li>
+<li>Drag a <b>${this.showLibElement(this.showElement('h1'), '.crsa-factory-element-type-html-h1')}</b> inside the ${this.showElement('div')}.</li>
+<li>The empty placeholder was removed because the element has content now.</li>
+<li>Select the <b>${this.select('h1')}</b> element and <b>Delete it</b>.</li>
+<li>Turn on the ${this.tooltip('empty placeholder', 'empty_placeholder')} on the DIV.</li>
+</ol>
+
+<ol>
+<li>Select the <b>${this.select('header')}</b> element.</li>
+<li>Open the <b>Style panel</b>.</li>
+<li>Make sure the ${this.rule('header')} is selected.</li>
+<li>Click on the ${this.showStyleSizeTab('MD')}.</li>
+<li>Click on the ${this.showStyleSizeTabCreateRule()} button.</li>
+<li>Notice that the new <code>.header</code> rule was created under <code>@media (min-width: 769px)</code>.</li>
+<li>Set the <b>Background image</b> to <code>pines_medium.jpg</code>.</li>
+<li>Use controls in <b>Flex Container</b> section to position the heading.</li>
+<li><b>Right-click</b> on the ${this.showStyleSizeTab('LG')} to switch to that size and to resize the page view.</li>
+<li>Click on the ${this.showStyleSizeTabCreateRule()} button.</li>
+<li>Notice that the new <code>.header</code> rule was created under <code>@media (min-width: 1025px)</code>.</li>
+<li>Set the <b>Background image</b> to <code>pines_large.jpg</code>.</li>
+<li>Use controls in <b>Flex Container</b> section to position the heading.</li>
+<li>Use <b>Visual CSS editor settings</b> to toggle automatic page view resizing.</li>
+</ol>
+
+<ol>
+<li>Select the ${this.select('section')} element.</li>
+<li>Go to the <b>Style panel</b>.</li>
+<li>Make sure that the rule <code>.cool-blocks-about-me</code> is selected.</li>
+<li>Set <b>Padding top / bottom</b> to <code>20px</code>.</li>
+<li>Select the ${this.select('img')} element.</li>
+<li>Make sure that the rule <code>.cool-blocks-about-me img</code> is selected.</li>
+<li>Set <b>Min height</b> to <code>340px</code>.</li>
+<li>Set <b>Object fit</b> to <code>cover</code>.</li>
+<li>Set <b>Border radius</b> to <code>10px</code>.</li>
+<li>Play around with different ways of styling the block. Use visual controls, properties or code editor. If needed, ${this.tooltip('Turn off the visual helpers', 'menu_toggle')} to better see the selected element.</li>
+<li><b>Export the plugin</b> and test the block.</li>
+</ol>
+
+<ol>
+<li>Select the <b>${this.select('section')}</b> element.</li>
+<li>Switch to the <b>WordPress panel</b>.</li>
+<li>Click on the <b>${this.showWPActionName('Block', '[data-action="cms-block"]')}</b> action to add it to the selected element.</li>
+<li>Set the <b>${this.showWPActionField('Unique id', 'cms-block')}</b> to <code>about-me</code>.</li>
+<li>Set the <b>${this.showWPActionField('Title', 'cms-block', 'title')}</b> to <code>About me</code>.</li>
+<li><b>Export the plugin</b>.</li>
+<li>Go to WordPress dashboard, edit a page and add the block <code>About me</code> to the content.</li>
+</ol>
+
+<ol>
+<li>Select the <b>${this.select('h3')}</b> element.</li>
+<li>Switch to the <b>WordPress panel</b>.</li>
+<li>Click on the <b>${this.showWPActionName('Block Attributes', '[data-action="cms-block-field"]')}</b> action to add it to the selected heading.</li>
+<li>Set the <b>${this.showWPActionField('Attribute id', 'cms-block-field')}</b> to <code>name</code>.</li>
+<li>Set the <b>${this.showWPActionField('Title', 'cms-block-field', 'title')}</b> to <code>Name</code>.</li>
+<li>Select the <b>${this.select('p')}</b> element.</li>
+<li>Add the <b>${this.showWPActionName('Block Attributes', '[data-action="cms-block-field"]')}</b> action.</li>
+<li>Set the <b>${this.showWPActionField('Attribute id', 'cms-block-field')}</b> to <code>bio</code>.</li>
+<li>Set the <b>${this.showWPActionField('Title', 'cms-block-field', 'title')}</b> to <code>Bio</code>.</li>
+<li>Select the <b>${this.select('img')}</b> element.</li>
+<li>Add the <b>${this.showWPActionName('Block Attributes', '[data-action="cms-block-field"]')}</b> action.</li>
+<li>Set the <b>${this.showWPActionField('Attribute id', 'cms-block-field')}</b> to <code>image</code>.</li>
+<li>Set the <b>${this.showWPActionField('Title', 'cms-block-field', 'title')}</b> to <code>Image</code>.</li>
+<li>Notice that <b>${this.showWPActionField('Use as', 'cms-block-field', 'type')}</b> is set to <code>Image</code>.</li>
+<li><b>Export the plugin</b> and test the block.</li>
+</ol>
+
+<ol>
+<li><b>Create a link</b> on the <b>${this.select('second h2', 'h2:nth-of-type(2)')}</b>.</li>
+<li>Select the <b>${this.select('newly created link <a> in h2', 'h2 a')}</b>. Use the <b>Tree panel</b> to easily navigate the code structure.</li>
+</ol>
+
+<ol>
+<li>Add the <b>${this.showWPActionName('Block Condition', '[data-action="cms-block-condition"]')}</b> action to the selected heading.</li>
+<li>Set the <b>${this.showWPActionField('Attribute id', 'cms-block-condition', '')}</b> to <code>card_link</code>.</li>
+<li>Check the <b>${this.showWPActionField('Not', 'cms-block-condition', 'not')}</b> to show the heading if the link is NOT set.</li>
+<li>Select the <b>${this.select('second h2', 'h2:nth-of-type(2)')}</b> element.</li>
+<li>Add the <b>${this.showWPActionName('Block Condition', '[data-action="cms-block-condition"]')}</b> action to the selected heading.</li>
+<li>Set the <b>${this.showWPActionField('Attribute id', 'cms-block-condition', '')}</b> to <code>card_link</code> to show the heading if the Card link is set.</li>
+</ol>
+
+Now, use what you learned to output the tutorial markup for the tutorial described here:
+
+Starting code:
+<div class="card"><h2>Card title</h2></div>
+
+Instructions:
+Duplicate the h2. Add a link to the second h2, make link an editable attribute.
+
+Tutorial markup:
+<ol>

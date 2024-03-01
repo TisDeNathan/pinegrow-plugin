@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind - test</title>
+    <style>
+        .container {
+            display: flex;
+            height: 98vh;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .input-textarea {
+            height: 28vh;
+        }
+
+        .iframe-content {
+            height: 90.2vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            Config:
+            <textarea class="input-textarea" id="config"></textarea>
+            Stylesheet:
+            <textarea class="input-textarea" id="stylesheet"></textarea>
+            HTML:
+            <textarea class="input-textarea" id="html"></textarea>
+        </div>
+        <div class="content-container">
+            Result:
+            <iframe class="iframe-content" id="content-iframe">
+            </iframe>
+        </div>
+    </div>
+
+    <script src="tailwind.js"></script>
+    <script>
+        // set default value
+        // Config
+        const configEl = document.getElementById('config');
+        configEl.value = `{
+    "theme": {
+        "extend": {
+            "colors": {
+                "pinegrow": {
+                    "light": "#51a9c1",
+                    "DEFAULT": "#3997bd",
+                    "dark": "#177cb2"
+                }
+            }
+        }
+    }
+}`;
+
+        // Stylesheet
+        const stylesheetEl = document.getElementById('stylesheet');
+        stylesheetEl.value = `@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply font-bold py-2 px-4 rounded bg-pinegrow-dark text-white border-0;
+}`;
+
+        // HTML
+        const htmlEl = document.getElementById('html');
+        htmlEl.value = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TW JIT Test</title>
+</head>
+<body>
+    <button class="btn">.btn button</button>
+    <button class="font-bold py-2 px-4 rounded">Class button</button>
+</body>
+</html>`;
+    </script>
+
+    <script>
+        const iframe = document.getElementById('content-iframe');
+        iframe.contentDocument.body.innerHTML = htmlEl.value;
+    </script>
+
+    <script>
+        function updateIframe() {
+            const config = JSON.parse(configEl.value.replace(/[\n\s]/g, ''));
+
+            tailwind.render(stylesheetEl.value, [htmlEl.value], config)
+                .then(css => {
+                    console.log(css)
+                    iframe.contentDocument.body.innerHTML = htmlEl.value;
+                    iframe.contentDocument.head.innerHTML = '<style>' + css + '</style>';
+                });
+        }
+
+        updateIframe();
+
+        configEl.onchange = () => {
+            updateIframe();
+        }
+
+        stylesheetEl.onchange = () => {
+            updateIframe();
+        }
+
+        htmlEl.onchange = () => {
+            updateIframe();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+.field-icon {
+  background-image: url(images/css-icons/css-icons-72.png);
+  background-repeat: no-repeat;
+  background-position-x: -9px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .field-icon {
+    background-image: url(images/css-icons/css-icons-144.png);
+    background-size: 40px 2000px;
+  }
+}
+.icon-width {
+  background-position-y: -11px;
+}
+.icon-min-width {
+  background-position-y: -43px;
+}
+.icon-max-width {
+  background-position-y: -73px;
+}
+.icon-height {
+  background-position-y: -111px;
+}
+.icon-min-height {
+  background-position-y: -142px;
+}
+.icon-max-height {
+  background-position-y: -173px;
+}
+.icon-margin-left {
+  background-position-y: -210px;
+}
+.icon-margin-right {
+  background-position-y: -241px;
+}
+.icon-margin-top {
+  background-position-y: -274px;
+}
+.icon-margin-bottom {
+  background-position-y: -309px;
+}
+.icon-padding-left {
+  background-position-y: -349px;
+}
+.icon-padding-right {
+  background-position-y: -384px;
+}
+.icon-padding-top {
+  background-position-y: -424px;
+}
+.icon-padding-bottom {
+  background-position-y: -459px;
+}
+.icon-left {
+  background-position-y: -497px;
+}
+.icon-right {
+  background-position-y: -530px;
+}
+.icon-top {
+  background-position-y: -564px;
+}
+.icon-bottom {
+  background-position-y: -597px;
+}
+.icon-z-index {
+  background-position-y: -629px;
+}
+.icon-border {
+  background-position-y: -659px;
+}
+.icon-border-left {
+  background-position-y: -690px;
+}
+.icon-border-right {
+  background-position-y: -722px;
+}
+.icon-border-top {
+  background-position-y: -756px;
+}
+.icon-border-bottom {
+  background-position-y: -791px;
+}
+.icon-border-radius {
+  background-position-y: -830px;
+}
+.icon-position {
+  background-position-y: -866px;
+}
+.icon-display {
+  background-position-y: -893px;
+}
+.icon-overflow {
+  background-position-y: -919px;
+}
+.icon-float {
+  background-position-y: -949px;
+}
+.icon-clear {
+  background-position-y: -975px;
+}
+.icon-vertical-align {
+  background-position-y: -1003px;
+}
+.icon-color {
+  background-position-y: -1067px;
+}
+.icon-font-family {
+  background-position-y: -1095px;
+}
+.icon-font-size {
+  background-position-y: -1128px;
+}
+.icon-line-height {
+  background-position-y: -1161px;
+}
+.icon-font-weight {
+  background-position-y: -1195px;
+}
+.icon-font-style {
+  background-position-y: -1223px;
+}
+.icon-font-variant {
+  background-position-y: -1251px;
+}
+.icon-text-decoration {
+  background-position-y: -1374px;
+}
+.icon-text-transform {
+  background-position-y: -1278px;
+}
+.icon-text-align {
+  background-position-y: -1308px;
+}
+.icon-letter-spacing {
+  background-position-y: -1341px;
+}
+.icon-background {
+  background-position-y: -1405px;
+}
+.icon-background-color {
+  background-position-y: -1432px;
+}
+.icon-background-image {
+  background-position-y: -1460px;
+}
+.icon-background-repeat {
+  background-position-y: -1488px;
+}
+.icon-background-position {
+  background-position-y: -1516px;
+}
+.icon-background-attachment {
+  background-position-y: -1545px;
+}
+.icon-background-size {
+  background-position-y: -1570px;
+}
+.icon-background-origin {
+  background-position-y: -1600px;
+}
+.icon-list-style-type {
+  background-position-y: -1662px;
+}
+.icon-list-style-position {
+  background-position-y: -1690px;
+}
+.icon-list-style-image {
+  background-position-y: -1717px;
+}

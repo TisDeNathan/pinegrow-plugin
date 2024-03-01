@@ -1,0 +1,44 @@
+.pgc-css-panel num {
+  border-bottom: 1px dotted;
+  cursor: row-resize;
+}
+.pgc-css-panel color .sp-replacer {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+.pgc-css-panel colorbox {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+.pgc-css-rule {
+  background-color: #eee;
+  margin-bottom: 8px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.pgc-css-rule-props {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  column-gap: 8px;
+  row-gap: 4px;
+  flex-wrap: wrap;
+}
+.pgc-css-prop {
+  white-space: nowrap;
+  background-color: #ccc;
+  border-radius: 2px;
+  padding: 0 4px;
+}
+.pgc-css-prop .pgc-css-prop-label {
+  display: inline-block;
+  margin-right: 4px;
+}
+.pgc-css-prop .pgc-css-prop-value {
+  display: inline-block;
+}

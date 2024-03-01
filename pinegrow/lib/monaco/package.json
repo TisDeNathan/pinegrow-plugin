@@ -1,0 +1,23 @@
+{
+  "name": "Monaco",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node ./node_modules/webpack/bin/webpack.js --progress"
+  },
+  "dependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@types/node": "^14.14.37",
+    "clean-webpack-plugin": "latest",
+    "copy-webpack-plugin": "latest",
+    "css-loader": "latest",
+    "emmet-monaco-es": "latest",
+    "file-loader": "latest",
+    "html-webpack-plugin": "latest",
+    "monaco-editor": "latest",
+    "monaco-editor-webpack-plugin": "latest",
+    "style-loader": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest"
+  }
+}

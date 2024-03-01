@@ -1,0 +1,155 @@
+body {
+  font-family: "OpenSans";
+}
+.lm_content {
+  position: relative;
+  background: #343434;
+  overflow: auto;
+}
+.lm_content #crsa-tree {
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.lm_content #crsa-left-plane {
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.lm_content .canvas {
+  width: 100%;
+  height: 100%;
+  background-color: #474747;
+}
+.lm_drag_header {
+  height: 12px;
+  background: #3a3a3a;
+  cursor: move;
+}
+.lm_floating .lm_header {
+  background: #3a3a3a;
+}
+.lm_floating_animate {
+  transition: top 0.25s, left 0.25s;
+}
+.lm_floating {
+  position: absolute;
+  border: 1px solid #4f4f4f;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.lm_floating .lm_splitter {
+  background: #3a3a3a;
+  opacity: 1;
+}
+.lm_resize_handle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #5c5c5c;
+  z-index: 1;
+  cursor: nwse-resize;
+}
+.lm_dropTargetIndicator {
+  z-index: 10000;
+}
+.lm_docked.lm_docked_closed > .lm_header {
+  transform-origin: top left;
+  transform: rotate(90deg);
+  left: 20px;
+  top: 20px;
+  z-index: 3;
+  width: 90vh;
+}
+.lm_docked_closed > .lm_items {
+  display: none;
+}
+.lm_docked_closed > .lm_header > .lm_controls {
+  display: none;
+}
+.lm_row > .lm_item {
+  float: none;
+  position: absolute;
+  display: block;
+}
+.lm_splitter.lm_horizontal {
+  display: block;
+  float: none;
+  position: absolute;
+}
+.lm_handle {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  right: 0;
+}
+.lm_stack {
+  overflow: hidden;
+}
+.lm_header .lm_controls {
+  z-index: 1;
+}
+.page-tab {
+  height: 100%;
+  white-space: nowrap;
+}
+.page-tab .page {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
+#layout-container {
+  position: absolute;
+  top: 38px;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+.select-box {
+  display: none;
+  position: fixed;
+  left: 186px;
+  top: 369px;
+  width: 0px;
+  height: 0px;
+  border: 1px solid rgba(255, 184, 0, 0.3);
+  background: rgba(255, 184, 0, 0.1);
+  z-index: 1000;
+}
+.overlay-message {
+  position: absolute;
+  z-index: 2000;
+  background: rgba(71, 71, 71, 0.88);
+  color: rgba(255, 255, 255, 0.95);
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 40px;
+  line-height: 140px;
+  pointer-events: none;
+}
+.repeater-count {
+  padding-left: 6px;
+  font-size: 11px;
+  opacity: 0.8;
+}
+.repeater-count:empty {
+  display: none;
+}
+.page-view-iframe {
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.panel-notice {
+  color: white;
+}

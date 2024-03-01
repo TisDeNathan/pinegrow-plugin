@@ -1,0 +1,1 @@
+(window=window||self).onmessage=function(a){a.data&&a.data.css&&window.tailwind.render(a.data.css,a.data.html,a.data.config).then(a=>{postMessage({css:a})}).catch(a=>{postMessage({error:a})})},window.tailwind=tailwindClass();

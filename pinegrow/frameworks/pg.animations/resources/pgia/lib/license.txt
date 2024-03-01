@@ -1,0 +1,26 @@
+/*!
+ * PINEGROW INTERACTIONS (PGIA) Run-time library
+ * PGIA_VERSION: 1.1
+ * DATE: 2019-11-26
+ * INFO: https://pinegrow.com/web-interactions-and-animations
+ * @license Copyright (c) 2019 Pinegrow Pte. Ltd. All rights reserved, with exlusion of supporting libraries.
+ *
+ * DON'T MAKE CHANGES TO THIS FILE. IT IS AUTO-UPDATED BY PINEGROW WEB EDITOR.
+ *
+ * LICENSE SUMMARY:
+ * You are allowed to use, duplicate, distribute this code as a part
+ * of work developed with PGIA, and license it to third parties, who may also license
+ * such developed work to end-users.
+ * Use in software for building or generating websites and web applications is not permitted.
+ * License details can be found on https://pinegrow.com/Pinegrow_EULA.pdf
+ *
+ * Includes supporting libraries:
+ *
+ * GreenSock GSAP, @author: Jack Doyle, jack@greensock.com
+ *
+ * @license Copyright (c) 2008-2019, GreenSock. All rights reserved.
+ * GSAP is subject to the terms of enterprise license between GreenSock and Pinegrow Pte. Ltd., under which PGIA users are allowed to use, duplicate and distribute this code as a part of work developed with PGIA, and license it to third parties, who may also license such developed work to end-users.
+ * If GSAP is used outside of PGIA or if GSAP is accesses directly through custom Javascript code, it is subject to its own license https://greensock.com/standard-license
+ *
+ * ScrollMagic, (c) 2019 Jan Paepke (@janpaepke) | license & info: http://scrollmagic.io
+ **/

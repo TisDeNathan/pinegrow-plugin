@@ -1,0 +1,52 @@
+.fast-editor-list {
+  list-style-type: none;
+  padding: 10px;
+}
+.fast-editor-list .add-new-node,
+.crsa-vars-main-list .add-new-node,
+.rule-list .add-new-node {
+  color: gray;
+}
+.fast-editor-list li {
+  position: relative;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+.fast-editor-list li.selected-item {
+  background: rgba(255, 184, 0, 0.08);
+}
+.fast-editor-list li.hoverd-top {
+  cursor: pointer;
+  border-top: 1px solid #e96105 !important;
+}
+.fast-editor-list li.hoverd-bottom {
+  cursor: pointer;
+  border-bottom: 1px solid #e96105 !important;
+}
+.fast-editor-list li i {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  cursor: pointer;
+  color: #ABABAB;
+}
+.fast-editor-list li i:hover {
+  color: #FFFFFF;
+}
+.fast-editor-list span {
+  min-width: 10px;
+  display: inline-block;
+  padding: 0 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.fast-editor-list span[contenteditable] {
+  background: rgba(90, 90, 90, 0.4);
+  border-color: #838383;
+}
+.fast-editor-list .item-prop {
+  color: #dfba13;
+}
+.fast-editor-list .item-value {
+  color: #6cadd6;
+}

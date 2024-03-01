@@ -1,0 +1,76 @@
+.pg-lib-group {
+    max-width: 480px;
+    padding: 18px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    min-width: 300px;
+}
+
+.pg-lib-section-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+html,
+body {
+    background-color: #e6e6e6;
+}
+
+.pg-lib-item {
+    margin-bottom: 4px;
+}
+
+.pg-lib-section {
+    margin-top: 40px;
+}
+
+main {
+    padding: 15px;
+}
+
+.pg-lib-section:first-child {
+    margin-top: 0px;
+}
+
+.pg-lib-group-modal .modal {
+    display: block;
+    position: relative;
+    opacity: 1;
+}
+
+.pg-lib-group-modal .modal-body {
+    max-height: 300px;
+    overflow: auto;
+}
+
+.pg-lib-group-modal .modal-dialog {
+    transform: none !important;
+}
+
+.pg-lib-item.fixed-top {
+    position: relative;
+}
+
+.fixed-bottom.pg-lib-item {
+    position: relative;
+}
+
+.pg-lib-group-large {
+    min-width: 800px;
+    max-width: 800px;
+}
+
+.pg-lib-group-images {
+}
+
+.pg-lib-group-images > img {
+    max-width: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.pg-lib-group img {
+    /* max-width: 100% */
+}

@@ -1,0 +1,34 @@
+.monaco-editor, .monaco-editor .inputarea.ime-input {
+    color: transparent !important;
+}
+
+.pg-code-insert-editor > div {
+    height: 100px !important;
+}
+
+/*hide format menu in context menu*/
+.context-view li.action-item:nth-child(n + 0) {
+    display: none !important;
+}
+
+.monacoGlyphs{
+    background: #e03d3d;
+    color: white !important;
+
+}
+
+.warningIcon {
+    display: block;
+    background-image: url('assets/warning.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 12px !important;
+}
+
+.errorIcon {
+    display: block;
+    background-image: url('assets/error.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 12px !important;
+}

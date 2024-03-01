@@ -1,0 +1,16 @@
+
+.pg-table-grid-cell-pgel nametag:before {
+  content: '<';
+}
+.pg-table-grid-cell-pgel nametag:after {
+  content: '>';
+}
+.pg-table-grid-cell-class {
+  /*
+  border-bottom: none;
+  background-color: @pgBlue;
+  color: white;
+  border-radius: 2px;
+
+   */
+}

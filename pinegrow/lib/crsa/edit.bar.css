@@ -1,0 +1,25 @@
+
+.pg-pine-cone {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.pg-pine-cone .left {
+  flex-basis: 66%;
+}
+.pg-pine-cone .buttons {
+  padding-left: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.pg-pine-cone .right {
+  flex-basis: 34%;
+}
+.pg-pine-cone .saved {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}

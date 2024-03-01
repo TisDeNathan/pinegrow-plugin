@@ -1,0 +1,1 @@
+class PgResponsiveImages{constructor(){}calculateResponsiveSizes(e,a){e.getPage().activeView.calculateImageResponsiveSizes(e,function(e,s){a&&a(e)},!0)}}

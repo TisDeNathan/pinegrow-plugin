@@ -1,0 +1,15 @@
+.pg-buy-box {
+  width: 720px;
+}
+.pg-buy-box .modal-body {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.pg-buy-box .modal-content {
+  background: #474745;
+  color: gray;
+}
+.muki {
+  --empty-placeholder: 0px;
+  color: red;
+}

@@ -1,0 +1,1 @@
+var PgPageViewPlayer=function(e,n,t){var o=n.get(0),a=new PgEventHandler(0,0),r=new PgNodeEventDOMPlayer(n,t);a.on_event=function(e){var n;e.page===t.getPage()&&(n=o.contentDocument?o.contentDocument.documentElement:null)&&r.play(e,n)};this.open=function(e){a.start()},this.destroy=function(){a.destroy(),r.destroy()}};

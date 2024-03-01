@@ -1,0 +1,1 @@
+var PgBSMenuPointColumnSize=function(n,e,u,i,o){return new PgMenuPointColumnSize(n,e,u,i,o)};

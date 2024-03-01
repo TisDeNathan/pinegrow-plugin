@@ -1,0 +1,12 @@
+
+#wpadminbar .pg-admin-bar-menu {
+
+}
+
+#wpadminbar .pg-admin-bar-menu.pg-staging-mode > .ab-item {
+    background-color: #4396c7 !important;
+}
+
+#wpadminbar .pg-admin-bar-menu.pg-staging-mode:hover > .ab-item > .ab-label {
+    color: white !important;
+}

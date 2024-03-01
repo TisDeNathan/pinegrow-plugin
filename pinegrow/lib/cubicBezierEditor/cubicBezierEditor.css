@@ -1,0 +1,54 @@
+.floating-bezier-box {
+    background: #ececec;
+    border: 1px solid #d2d2d2;
+    z-index: 10;
+}
+
+.cubic-bezier-editor {
+    position: relative;
+    display: grid;
+    background: white;
+}
+
+.movable-point,
+.static-point {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.movable-point {
+    cursor: pointer;
+}
+
+.static-point {
+    background: white;
+}
+
+canvas {
+    border-top: 1px dashed;
+    border-right: 1px dashed;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.bezier-control-container {
+    padding-top: 10px;
+    text-align: right;
+}
+
+.canvas-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: rgba(99, 99, 99, 0);
+    cursor: pointer;
+    padding: 2px;
+}
+
+.built-in-curves {
+    margin-bottom: 10px;
+}
